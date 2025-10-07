@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aurora Bistro — Seasonal Menu</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="hero">
+  <nav class="nav wrap">
+    <a class="logo" href="#">Aurora<span class="dot">•</span>Bistro</a>
+
+    <div class="nav-right">
+      <input id="searchBox" type="search" placeholder="Search menu…">
+      <button id="picksBtn" class="btn btn-outline" aria-pressed="false">Chef’s Picks</button>
+      <button id="cartBtn" class="btn btn-solid cart-toggle">Cart (<span id="cartQty">0</span>)<span class="cart-count" id="cartBubble">0</span></button>
+      <a class="btn btn-solid" href="#contact">Reserve</a>
+    </div>
+  </nav>
+
+  <div class="hero wrap">
+    <h1 class="hero-title">Seasonal Tasting Menu</h1>
+    <p class="hero-subtitle">locally sourced • wood-fired • handcrafted</p>
+    <div class="badges"><span class="badge">Vegetarian options</span><span class="badge accent">Chef’s picks</span></div>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <!-- Small Plates -->
+  <section id="small" class="menu-section">
+    <h2 class="category-title">Small Plates</h2>
+    <div class="menu-grid" id="grid-small">
+      <article class="menu-card chef-pick" data-price="420">
+        <h3 class="item-title">Charred Baby Corn</h3>
+        <p class="item-desc">Smoked paprika butter, lime ash, micro cilantro.</p>
+        <div class="meta">
+          <span class="diet v">V</span>
+          <div class="actions">
+            <span class="price"></span>
+            <button class="btn btn-outline add-btn" style="color: #000;">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-price="380">
+        <h3 class="item-title">Burrata & Heirloom Tomato</h3>
+        <p class="item-desc">Basil oil, sea salt, balsamic pearls.</p>
+        <div class="meta">
+          <span class="diet veg">VEG</span>
+          <div class="actions">
+            <span class="price"></span>
+            <button class="btn btn-outline add-btn" style="color: #000;">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-price="460">
+        <h3 class="item-title">Crispy Calamari</h3>
+        <p class="item-desc">Preserved lemon aioli, pickled chili.</p>
+        <div class="meta">
+          <span class="diet nf">NF</span>
+          <div class="actions">
+            <span class="price"></span>
+            <button class="btn btn-outline add-btn" style="color: #000;">Add</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Mains -->
+  <section id="mains" class="menu-section">
+    <h2 class="category-title">Wood-Fired Mains</h2>
+    <div class="menu-grid">
+      <article class="menu-card" data-price="890">
+        <h3 class="item-title">Wild Mushroom Risotto</h3>
+        <p class="item-desc">Parmesan crisp, truffle pecorino, thyme butter.</p>
+        <div class="meta">
+          <span class="diet veg">VEG</span>
+          <div class="actions"><span class="price"></span><button class="btn btn-outline add-btn" style="color: #000;">Add</button></div>
+        </div>
+      </article>
+
+      <article class="menu-card chef-pick" data-price="1120">
+        <h3 class="item-title">Chili-Honey Glazed Salmon</h3>
+        <p class="item-desc">Charred bok choy, sesame furikake, citrus glaze.</p>
+        <div class="meta">
+          <span class="diet gf">GF</span>
+          <div class="actions"><span class="price"></span><button class="btn btn-outline add-btn" style="color: #000;">Add</button></div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-price="980">
+        <h3 class="item-title">Herb-Crusted Lamb</h3>
+        <p class="item-desc">Rosemary jus, potato fondant, minted peas.</p>
+        <div class="meta">
+          <span class="diet">—</span>
+          <div class="actions"><span class="price"></span><button class="btn btn-outline add-btn" style="color: #000;">Add</button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Desserts -->
+  <section id="desserts" class="menu-section">
+    <h2 class="category-title">Desserts</h2>
+    <div class="menu-grid">
+      <article class="menu-card" data-price="360">
+        <h3 class="item-title">Dark Chocolate Torte</h3>
+        <p class="item-desc">Espresso cream, cocoa nib brittle.</p>
+        <div class="meta">
+          <span class="diet nf">NF</span>
+          <div class="actions"><span class="price"></span><button class="btn btn-outline add-btn" style="color: #000;">Add</button></div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-price="320">
+        <h3 class="item-title">Lemon Panna Cotta</h3>
+        <p class="item-desc">Blueberry compote, candied peel.</p>
+        <div class="meta">
+          <span class="diet gf">GF</span>
+          <div class="actions"><span class="price"></span><button class="btn btn-outline add-btn" style="color: #000;">Add</button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<!-- Contact / Footer -->
+<footer id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-card"><h4>Location</h4><p>18 Jubilee Hills Rd, Hyderabad</p><p>Near Botanical Gardens</p></div>
+    <div class="contact-card"><h4>Hours</h4><p>Mon–Thu: 12–22:30</p><p>Fri–Sun: 12–23:30</p></div>
+    <div class="contact-card"><h4>Contact</h4><p>+91 90000 12345</p><p>hello@aurorabistro.in</p></div>
+  </div>
+  <section class="style-guide wrap">
+    <h5>Typography & Style Guide</h5>
+    <ul>
+      <li><strong>Fonts:</strong> Playfair Display + Inter</li>
+      <li><strong>Colors:</strong> --brand, --accent, --bg, --ink, --muted</li>
+      <li><strong>Shadows:</strong> 3 box-shadow levels</li>
+      <li><strong>Selectors:</strong> ID, class, attribute, pseudo-class, pseudo-element</li>
+    </ul>
+  </section>
+  <p class="legal">© 2025 Aurora Bistro</p>
+</footer>
+
+<!-- Cart Drawer -->
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-head">
+    <strong>Your Order</strong>
+    <button id="closeCart" class="btn btn-outline" aria-label="Close cart">Close</button>
+  </div>
+  <div class="cart-body" id="cartList"></div>
+  <div class="cart-foot">
+    <div style="display:flex;justify-content:space-between;font-weight:700;">
+      <span>Total</span><span id="cartTotal">₹0</span>
+    </div>
+    <div style="display:flex;gap:8px;">
+      <button id="clearCart" class="btn btn-outline" style="flex:1;">Clear</button>
+      <button id="checkoutBtn" class="btn btn-solid" style="flex:1;">Checkout</button>
+    </div>
+  </div>
+</aside>
+
+<!-- Checkout Modal -->
+<div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="ckTitle">
+  <div class="modal-card">
+    <h3 id="ckTitle" style="margin:0 0 8px;font-family:'Playfair Display',serif;">Order confirmed 🎉</h3>
+    <p id="ckMsg" style="margin:0 0 16px;">Thanks! Your table is reserved and your order will be prepared.</p>
+    <button id="closeModal" class="btn btn-solid">Done</button>
+  </div>
+</div>
+
+<!-- Back to Top -->
+<button id="toTop" class="btn btn-solid" aria-label="Back to top">↑ Top</button>
+
+
+<script>
+/* ====== Interactions: search, picks filter, cart drawer, add-to-cart, checkout, scroll ====== */
+(() => {
+  const $ = (q, root=document) => root.querySelector(q);
+  const $$ = (q, root=document) => [...root.querySelectorAll(q)];
+
+  // Elements
+  const searchBox = $('#searchBox');
+  const picksBtn  = $('#picksBtn');
+  const cartBtn   = $('#cartBtn');
+  const cartDrawer= $('#cartDrawer');
+  const closeCart = $('#closeCart');
+  const cartList  = $('#cartList');
+  const cartTotal = $('#cartTotal');
+  const cartQty   = $('#cartQty');
+  const cartBubble= $('#cartBubble');
+  const clearCart = $('#clearCart');
+  const checkoutBtn = $('#checkoutBtn');
+  const modal     = $('#checkoutModal');
+  const closeModal= $('#closeModal');
+  const toTop     = $('#toTop');
+
+  // Data
+  const cart = [];
+
+  // Helpers
+  const money = n => '₹' + n.toFixed(0);
+  function updateCartUI(){
+    cartList.innerHTML = '';
+    let total = 0;
+    cart.forEach((it, i) => {
+      total += it.price * it.qty;
+      const row = document.createElement('div');
+      row.className = 'cart-item';
+      row.innerHTML = `
+        <div>
+          <strong>${it.name}</strong>
+          <div style="font-size:.9rem;color:#6b7280;">${money(it.price)} × ${it.qty}</div>
+        </div>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <button class="btn btn-outline" data-act="dec" data-idx="${i}" aria-label="Decrease">−</button>
+          <button class="btn btn-outline" data-act="inc" data-idx="${i}" aria-label="Increase">+</button>
+          <button class="btn btn-outline" data-act="del" data-idx="${i}" aria-label="Remove">✕</button>
+        </div>`;
+      cartList.appendChild(row);
+    });
+    cartTotal.textContent = money(total);
+    const qty = cart.reduce((s,i)=>s+i.qty,0);
+    cartQty.textContent = qty;
+    cartBubble.textContent = qty;
+    cartBubble.style.display = qty ? 'inline-block' : 'none';
+  }
+
+  function addToCart(name, price){
+    const found = cart.find(i => i.name === name);
+    if(found){ found.qty += 1; }
+    else{ cart.push({name, price, qty:1}); }
+    updateCartUI();
+  }
+
+  // Add buttons
+  $$('.add-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      const card = e.target.closest('.menu-card');
+      const name = $('.item-title', card).textContent.trim();
+      const price = Number(card.getAttribute('data-price') || 0);
+      addToCart(name, price);
+      // open drawer on first add
+      cartDrawer.classList.add('open');
+      cartDrawer.setAttribute('aria-hidden', 'false');
+    });
+  });
+
+  // Drawer open/close
+  cartBtn.addEventListener('click', () => {
+    cartDrawer.classList.toggle('open');
+    cartDrawer.setAttribute('aria-hidden', String(!cartDrawer.classList.contains('open')));
+  });
+  closeCart.addEventListener('click', () => {
+    cartDrawer.classList.remove('open');
+    cartDrawer.setAttribute('aria-hidden','true');
+  });
+
+  // Modify items in drawer
+  cartList.addEventListener('click', e => {
+    const act = e.target.getAttribute('data-act');
+    const idx = Number(e.target.getAttribute('data-idx'));
+    if(act==null) return;
+    if(act==='inc') cart[idx].qty += 1;
+    if(act==='dec') cart[idx].qty = Math.max(1, cart[idx].qty - 1);
+    if(act==='del') cart.splice(idx,1);
+    updateCartUI();
+  });
+
+  // Clear / Checkout
+  clearCart.addEventListener('click', () => { cart.length = 0; updateCartUI(); });
+  checkoutBtn.addEventListener('click', () => {
+    const total = cart.reduce((s,i)=>s+i.price*i.qty,0);
+    $('#ckMsg').textContent = total ? `Your total is ${money(total)}. We’ll confirm at the table.`
+                                    : 'Cart is empty, but your table is reserved!';
+    modal.classList.add('open');
+    cart.length = 0; updateCartUI();
+  });
+  closeModal.addEventListener('click', () => modal.classList.remove('open'));
+  modal.addEventListener('click', e => { if(e.target === modal) modal.classList.remove('open'); });
+
+  // Live Search (title + description)
+  searchBox.addEventListener('input', e => {
+    const q = e.target.value.toLowerCase().trim();
+    $$('.menu-card').forEach(card => {
+      const text = (card.innerText || '').toLowerCase();
+      card.style.display = text.includes(q) ? '' : 'none';
+    });
+  });
+
+  // Chef's Picks filter toggle
+  let picksOnly = false;
+  picksBtn.addEventListener('click', () => {
+    picksOnly = !picksOnly;
+    picksBtn.setAttribute('aria-pressed', String(picksOnly));
+    picksBtn.textContent = picksOnly ? 'Show All' : 'Chef’s Picks';
+    $$('.menu-card').forEach(card => {
+      card.style.display = (!picksOnly || card.classList.contains('chef-pick')) ? '' : 'none';
+    });
+  });
+
+  // Back to top
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 300) toTop.classList.add('show'); else toTop.classList.remove('show');
+  });
+  toTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // Initialize cart bubble hidden
+  cartBubble.style.display = 'none';
+})();
+</script>
+</body>
+</html>
